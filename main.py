@@ -85,7 +85,7 @@ def plotar_resultados(df, resultados, algoritmo, modelo):
 
     if algoritmo == "K-Means":
         plt.scatter(X[:, 0], X[:, 1], c=resultados, cmap="viridis", alpha=0.6)
-        plt.scatter(modelo.cluster_centers_[:, 0], modelo.cluster_centers_[:, 1], s=200, c="red", marker="X")
+        plt.scatter(modelo.cluster_centers_[:, 0], modelo.cluster_centers_[:, 1], s=50, c="red", marker="X", linewidths=0)
         plt.title("Clusters formados pelo K-Means")
         plt.xlabel("Feature 1")
         plt.ylabel("Feature 2")
